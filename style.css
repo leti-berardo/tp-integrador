@@ -1,0 +1,8 @@
+body {
+    width: 90vw;
+    margin: auto!important;
+}
+
+nav div i.material-icons {
+    font-size: 5rem;
+}
