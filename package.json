@@ -19,6 +19,9 @@
   "dependencies": {
     "material-icons": "^0.3.1",
     "materialize-css": "^1.0.0-rc.2",
-    "jquery": "3.4.1"
+    "jquery": "3.4.1",
+    "boostrap": "2.0.0",
+    "payform": "1.4.0"
+    
   }
 }
