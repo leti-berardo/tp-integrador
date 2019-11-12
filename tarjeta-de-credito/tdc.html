@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pago</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/node_modules/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="/node_modules/material-icons/iconfont/material-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/tdc.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left hide-on-small-and-down"><i class="material-icons">
+                        sentiment_satisfied_alt
+                    </i></a>
+                <ul id="nav-mobile" class="right">
+                    <li><a href="#usuario">Nuevo usuario</a></li>
+                    <li><a href="#pagos">Pagos</a></li>
+                    <li><a href="#peliculas">Alquiler Peliculas</a></li>
+                    <li><a href="#libros">Alquiler Libros</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <form action="#" class="credit-card-div">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+
+                <div class="row ">
+                    <div class="input-field col s12">
+                        <input type="text" class="form-control" id="card-number"/>
+                        <label for="card-number">Card number</label>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="input-field col s3">
+                        <input type="text" class="form-control" id="expity-month"/>
+                        <label for="expiry-month">Expiry Month 'MM'</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input type="text" class="form-control" id="expiry-year"/>
+                        <label for="expiry-year">Expiry Year 'YY'</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <input type="text" class="form-control" id="codigo-de-seguridad"/>
+                        <label for="codigo-de-seguridad">Codigo de seguridad</label>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="input-field col s12">
+                        <input type="text" class="form-control" id="nombre"/>
+                        <label for="nombre">Nombre en la tarjeta</label>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                        <select class="browser-default custom-select" id="company-card">
+                            <option selected>Compania</option>
+                            <option value="01">VISA</option>
+                            <option value="02">MASTERCARD</option>
+                            <option value="03">AMEX</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
+                        <input type="submit" class="btn btn-danger" value="CANCEL" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
+    <script src="/node_modules/payform/dist/payform.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./js/tdc.js"></script>
+    <script src="./js/jquery.payform.min.js"></script>
+</body>
+
+</html>
