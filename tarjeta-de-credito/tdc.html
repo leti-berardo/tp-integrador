@@ -41,15 +41,15 @@
                 </div>
                 <div class="row ">
                     <div class="input-field col s3">
-                        <input type="text" class="form-control" id="expity-month"/>
+                        <input type="number" class="form-control validate" id="expiry-month" min="1" max="12"/>
                         <label for="expiry-month">Expiry Month 'MM'</label>
                     </div>
                     <div class="input-field col s3">
-                        <input type="text" class="form-control" id="expiry-year"/>
+                        <input type="number" class="form-control validate" id="expiry-year" min="0" max="99"/>
                         <label for="expiry-year">Expiry Year 'YY'</label>
                     </div>
                     <div class="input-field col s3">
-                        <input type="text" class="form-control" id="codigo-de-seguridad"/>
+                        <input type="number" class="form-control valiidate" id="codigo-de-seguridad" min="0" max="999"/>
                         <label for="codigo-de-seguridad">Codigo de seguridad</label>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="row ">
                     <div class="col-md-6 col-sm-6 col-xs-6 pad-adjust">
-                        <input type="submit" class="btn btn-danger" value="CANCEL" />
+                        <input type="button" class="btn btn-danger" id="carga-formulario" value="submit" />
                     </div>
                 </div>
             </div>
@@ -79,10 +79,8 @@
     </form>
     <script src="/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/materialize-css/dist/js/materialize.min.js"></script>
-    <script src="/node_modules/payform/dist/payform.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/tdc.js"></script>
-    <script src="./js/jquery.payform.min.js"></script>
 </body>
 
 </html>
